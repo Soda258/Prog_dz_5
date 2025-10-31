@@ -8,18 +8,6 @@ void tearDown(void) {}
 
 const int size = 11;
 
-
-void join_int_arrays(int* src1, size_t size_src1, int* src2, size_t size_src2, int* dest){
-    int res[SIZE];
-    for(int i = 0; i < size_src1; i++){
-        res[i] = src1[i];
-    }
-    for(int i = size_src1; i < size_src1 + size_src2; i++){
-        res[i] = src2[i];
-    }
-    printf("%ls",res);
-}
-
 void test_JoinIntArray1(void) {
     int array1[] = {1,2,3,4,5};
     int array2[] = {1,2,3,4,5,6};
