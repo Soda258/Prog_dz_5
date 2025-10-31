@@ -47,7 +47,7 @@ void join_int_arrays(int* src1, size_t size_src1, int* src2, size_t size_src2, i
     for(int i = size_src1; i < size_src1 + size_src2; i++){
         res[i] = src2[i];
     }
-    printf("%d",res);
+    printf("%ls",res);
 }
 
 int main(int argc, char** argv) {
